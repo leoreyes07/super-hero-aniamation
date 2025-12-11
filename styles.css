@@ -204,6 +204,57 @@ body {
     }
 }
 
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+    background: var(--yellow-color);
+    border-radius: 0 50px 0 0;
+    transform: translateY(100%);
+
+    animation-name: footer;
+    animation-duration: 0.7s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footer {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.footer div img {
+    width: 150px;
+    position: absolute;
+    bottom: 30PX;
+
+    transform: translateY(0px) scale(1);
+    transition: all 500ms ease-in-out
+}
+
+.footer div:hover img {
+    cursor: pointer;
+    transform: translateY(-20px) scale(1.1);
+    transition: all 400ms ease-in-out
+}
+
+.footer div {
+    background: var(--blue-color);
+    width: 130px;
+    height: 50%;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
 .loader__main div {
     background: var(--red-color);
     width: 40px;
