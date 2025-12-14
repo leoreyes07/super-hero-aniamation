@@ -334,6 +334,7 @@ body {
     display: grid;
     place-items: center;
     position: relative;
+    border-radius: 15px;
 }
 
 .modal__container--slider {
@@ -345,6 +346,25 @@ body {
 .modal__container--slider input[type="radio"] {
     display: none;
 }
+
+.modal__action-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--red-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.modal__action-btn:hover {
+    background: var(--blue-color);
+    transform: scale(1.05);
+}
+
 
 .modal__cards {
     position: relative;
